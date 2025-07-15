@@ -1,0 +1,12 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Tom Rehbein
+	email = t.rehbein@hirschtec.eu
+[alias]
+	cm = commit -m
+	acm = !git add -A && git commit -m
+	co = checkout
+	cob = checkout -b
+	undo = reset HEAD~1 --mixed
+	res = !git reset --hard
