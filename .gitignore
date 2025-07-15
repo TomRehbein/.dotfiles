@@ -1,0 +1,128 @@
+# Git repositories (ignore nested .git directories)
+.git/
+**/.git/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.vim/
+.nvim/
+
+# Log files
+*.log
+logs/
+
+# Cache directories
+.cache/
+*.cache
+.sass-cache/
+.npm/
+.yarn/
+node_modules/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*_backup
+*_old
+
+# OS generated files
+.fseventsd
+.Trash-*
+.nfs*
+
+# SSH keys (just to be safe)
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# GPG keys
+*.gpg
+*.asc
+secring.*
+
+# Application specific
+.zsh_history
+.bash_history
+.python_history
+.mysql_history
+.sqlite_history
+.psql_history
+.irb_history
+.pry_history
+
+# Vim specific
+.netrwhist
+*/.netrwhist
+Session.vim
+.viminfo
+
+# Emacs specific
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ZSH specific
+.zcompdump*
+.zsh_sessions/
+
+# Fish shell
+.config/fish/fish_variables
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Personal notes and todos
+TODO
+NOTES
+notes.txt
+todo.txt
+
+# Compiled files
+*.pyc
+*.pyo
+__pycache__/
+*.class
+*.o
+*.so
+
+# Package managers
+.bundle/
+vendor/
+Gemfile.lock
+package-lock.json
+yarn.lock
+Pipfile.lock
+
+# Local configuration that shouldn't be shared
+*local*
+*private*
+*secret*
+
+# Any other .git directories (additional safety)
+*/.git/*
+**/.git/*

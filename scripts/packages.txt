@@ -1,0 +1,8 @@
+neovim
+tmux
+git
+curl
+wget
+build-essential
+nvm
+ripgrep
