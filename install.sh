@@ -14,4 +14,4 @@ sudo apt update
 xargs sudo apt install -y < ~/.dotfiles/scripts/packages.txt
 
 # dev tools
-~/.dotfiles/scirpts/setup-tools.sh
+# ~/.dotfiles/scirpts/setup-tools.sh
