@@ -1,4 +1,5 @@
 vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 -- Ctrl+Backspace delete word
 vim.keymap.set('i', '<C-H>', '<C-W>', { noremap = true, silent = true })
