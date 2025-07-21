@@ -1,6 +1,6 @@
 [user]
-	name = Tom Rehbein
-	email = t.rehbein@hirschtec.eu
+	name = TomRehbein
+    email = mastertomi01@googlemail.com
 
 [core]
     editor = nvim
@@ -50,7 +50,7 @@
     show-files = diff-tree --no-commit-id --name-only -r
 
     unstage = reset HEAD --
-	undo = reset --solft HEAD~1
+	undo = reset --soft HEAD~1
     undo-hard = reset --hard HEAD~1
 	res = !git reset --hard
 
