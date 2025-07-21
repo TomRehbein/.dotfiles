@@ -1,6 +1,6 @@
 [user]
-	name = TomRehbein
-    email = mastertomi01@googlemail.com
+    name = TomRehbein
+    email = tomi.rehbein@googlemail.com
 
 [core]
     editor = nvim
@@ -10,7 +10,7 @@
     pager = less -FRX
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [color]
     ui = auto
@@ -35,10 +35,10 @@
     untracked = cyan
 
 [alias]
-	cm = commit -m
-	acm = !git add -A && git commit -m
-	co = checkout
-	cob = checkout -b
+    cm = commit -m
+    acm = !git add -A && git commit -m
+    co = checkout
+    cob = checkout -b
     br = branch
     brs = branch -a
     df = diff
@@ -50,9 +50,9 @@
     show-files = diff-tree --no-commit-id --name-only -r
 
     unstage = reset HEAD --
-	undo = reset --soft HEAD~1
+    undo = reset --soft HEAD~1
     undo-hard = reset --hard HEAD~1
-	res = !git reset --hard
+    res = !git reset --hard
 
     amend = commit --amend
 
