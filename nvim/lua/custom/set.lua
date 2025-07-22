@@ -32,7 +32,7 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.mouse = 'a'
 
 vim.opt.ignorecase = true
-vim.opt.smatcase = true
+vim.opt.smartcase = true
 vim.opt.cursorline = true
 
 vim.opt.splitbelow = true
