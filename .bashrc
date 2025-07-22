@@ -72,6 +72,9 @@ if [ -x /usr/bin/dircolors ]; then
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
+#    export LS_COLORS='di=01;34:ln=01;36:so=01;32:pi=01;33:ex=01;31:bd=01;33:cd=01;33:su=01;35:sg=01;35:tw=01;32:ow=01;32:'
+    export LS_COLORS='di=01;33:ln=01;35:so=01;32:pi=01;36:ex=01;31:bd=01;33:cd=01;33:su=01;35:sg=01;35:tw=01;32:ow=01;32:'
+
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
