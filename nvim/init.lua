@@ -413,6 +413,28 @@ require('lazy').setup({
         --   },
         -- },
         -- pickers = {}
+        defaults = {
+          file_ignore_patterns = {
+            'node_modules/.*',
+            '%.git/.*',
+            '%.git$',
+            'build/.*',
+            'dist/.*',
+            'target/.*',
+          },
+        },
+        -- pickers = {
+        --   find_files = {
+        --     hidden = false,
+        --     -- Additional find_files specific ignores
+        --     find_command = { 'rg', '--files', '--hidden', '--glob', '!**/.git/*', '--glob', '!**/node_modules/*' },
+        --   },
+        --   live_grep = {
+        --     additional_args = function()
+        --       return { '--hidden', '--glob', '!**/.git/*', '--glob', '!**/node_modules/*' }
+        --     end,
+        --   },
+        -- },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
