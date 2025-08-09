@@ -32,25 +32,27 @@ sudo apt install -y \
     tree \
     htop \
     tmux \
-    zsh \
     fonts-firacode
 
-echo "📝 Installing Neovim... not implemented yet"
-# TODO
+echo "📝 Installing Neovim..."
+sudo add-apt-repository ppa:neovim-ppa/unstable
 
 echo "📁 Creating sym-links..."
 # Symlinks 
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
-# ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -sf ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 ln -sf ~/.dotfiles/.inputrc ~/.inputrc
 
-# add neovim unstable repo to apt
-sudo add-apt-repository ppa:neovim-ppa/unstable
-# install packages
-sudo apt update
-xargs sudo apt install -y < ~/.dotfiles/scripts/packages.txt
+echo "🟢 Installing Node.js via NVM... May need to be updated"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm install --lts
+nvm use --lts
 
 # dev tools
 # ~/.dotfiles/scirpts/setup-tools.sh
+
+echo "✅ Basic setup complete!"
